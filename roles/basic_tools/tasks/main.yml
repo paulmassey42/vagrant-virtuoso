@@ -1,0 +1,30 @@
+---
+- name: Install list of basic packages which might be useful
+  become: true
+  become_method: sudo     
+  apt:
+    pkg: 
+      - gdm3
+      - xinit
+      - gnome-terminal
+      - emacs
+      - vim
+      - dos2unix
+      - wget
+      - tar
+      - xsltproc
+      - ruby
+      - openjdk-8-jre-headless
+      - libxml2-utils
+      - curl
+      - cron
+      - firefox
+      - expect
+      - maven
+      - unzip
+      - python-pip
+    state: present
+    update_cache: true
+  register: reboot required
+  tags:
+    - basic

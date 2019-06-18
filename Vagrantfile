@@ -21,6 +21,8 @@ Vagrant.configure("2") do |config|
       vb2.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
       vb2.customize ["modifyvm", :id, "--memory", "8218"]
       vb2.customize ["modifyvm", :id, "--vram", "128"]      
+      vb2.customize ["modifyvm", :id, "--clipboard", "bidirectional"]
+      vb2.customize ["modifyvm", :id, "--draganddrop", "bidirectional"]
       vb2.gui = true
     end
     

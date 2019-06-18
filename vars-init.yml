@@ -1,0 +1,23 @@
+#######################################################
+installation_user: oslo
+installation_password: oslo
+installation_version: test
+
+#######################################################
+gituser: xxx
+gitpasswd: yyy
+gitauthtoken: zzzz
+
+#######################################################
+circleciapitoken: cccc
+
+#######################################################
+# with this pwd one has access to the OSLO Docker repo 
+# on the test environment
+oslodockerpwd: 
+
+#######################################################
+account_email: XXX@YYY.COM
+
+#######################################################
+a2enmod: false

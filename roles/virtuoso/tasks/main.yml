@@ -1,0 +1,9 @@
+---
+- name: Setup Virtuoso Docker
+  docker_container:
+    name: virtuoso
+    image: tenforce/virtuoso
+    state: started
+    ports:
+     - "8890:8890"
+     - "1111:1111"
